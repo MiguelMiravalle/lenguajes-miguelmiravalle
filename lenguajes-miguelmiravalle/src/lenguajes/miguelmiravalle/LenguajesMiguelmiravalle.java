@@ -17,6 +17,9 @@ public class LenguajesMiguelmiravalle {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Mi Primer Programa de Java.");
+        Imc objeto=new Imc();
+        System.out.println(objeto.calcular());
+       
     }
     
 }
