@@ -19,6 +19,10 @@ public class LenguajesMiguelmiravalle {
         System.out.println("Mi Primer Programa de Java.");
         Imc objeto=new Imc();
         System.out.println(objeto.calcular());
+        
+        String x= "12";
+        float valor= Float.parseFloat(x);
+        System.out.println(valor);
        
     }
     

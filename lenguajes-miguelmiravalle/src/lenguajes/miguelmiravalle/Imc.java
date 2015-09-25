@@ -13,6 +13,15 @@ public class Imc {
     float peso;
     float altura;
     
+    
+    public Imc(float p, float a){
+       peso = p;
+       altura = a;
+       
+        
+    }
+    
+    
     public Imc(){
         peso=78f;
         altura=1.68f;
@@ -37,8 +46,44 @@ public class Imc {
     }
     
     public float calcular(){
+       
         float resultadoImc=peso/(altura*altura);
-        return resultadoImc;
+        
+        
+        if (resultadoImc<20) {
+            System.out.println(resultadoImc+"Eres anorexico te moriras:");
+            if (resultadoImc>20||resultadoImc<26) {
+            System.out.println("Estas bien sano:"+resultadoImc);
+        
+            if (resultadoImc>25||resultadoImc<30) {
+            System.out.println("Te pasaste de tamales:"+resultadoImc);
+        
+            if (resultadoImc>30) {
+            System.out.println("Eres un tinaco:"+resultadoImc);
+        }
+        }
+            }
+        }
+        
+        //if (resultadoImc<20) {
+         //   System.out.println(resultadoImc+"Eres anorexico te moriras:");
+       // } 
+        //if (resultadoImc>20||resultadoImc<26) {
+        //    System.out.println("Estas bien sano:"+resultadoImc);
+       // }
+       // if (resultadoImc>25||resultadoImc<30) {
+       //     System.out.println("Te pasaste de tamales:"+resultadoImc);
+      //  } 
+      //  if (resultadoImc>30) {
+       //     System.out.println("Eres un tinaco:"+resultadoImc);   
+      //  } 
+         return resultadoImc;
+       
+        
+        
+       
     }
+       
+       
     
 }
