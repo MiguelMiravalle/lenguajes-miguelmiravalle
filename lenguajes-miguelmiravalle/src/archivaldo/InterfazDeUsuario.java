@@ -20,6 +20,8 @@ public class InterfazDeUsuario {
         FileOutputStream fos=new FileOutputStream(file);
         //Ponemos algo en el archivo
         String mensajito="Este es un mensajito";
+        Integer i=10;
+        Float flotante=12.5f;
         //Ahora guardamos el mensaje serializado
         ObjectOutputStream oos=new ObjectOutputStream(fos);
         //Guardamos
