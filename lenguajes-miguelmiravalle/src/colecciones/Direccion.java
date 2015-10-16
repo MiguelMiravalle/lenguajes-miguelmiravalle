@@ -5,11 +5,13 @@
  */
 package colecciones;
 
+import java.io.Serializable;
+
 /**
  *
  * @author T-107
  */
-public class Direccion {
+public class Direccion implements Serializable {
     private String calle;
     private long cp;
     private String colonia;
