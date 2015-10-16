@@ -28,6 +28,7 @@ public class PersistenciaUsuario2 {
     //Donde lo guardamos
     File f=new File("D:\\usuario.sql");
     if(f.exists())usuarios=buscarTodos();
+    FileOutputStream fos=new FileOutputStream(f);
     //Si existe ve a buscarTodos
         
     }
