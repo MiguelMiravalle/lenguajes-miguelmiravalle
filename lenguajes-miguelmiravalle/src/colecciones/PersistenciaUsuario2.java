@@ -29,6 +29,10 @@ public class PersistenciaUsuario2 {
     File f=new File("D:\\usuario.sql");
     if(f.exists())usuarios=buscarTodos();
     FileOutputStream fos=new FileOutputStream(f);
+    //
+    ObjectOutputStream oos=new ObjectOutputStream(fos);
+    usuarios.add(u);
+    oos.writeObject(usuarios); 
     //Si existe ve a buscarTodos
         
     }
@@ -36,6 +40,12 @@ public class PersistenciaUsuario2 {
     //Leer
     public ArrayList<Usuario> buscarTodos()throws Exception{
      //Aqui va toda la tarea, este busca todo
+     File file=new File("D:\\usuario.sql");
+     FileInputStream fis=new FileInputStream(file);
+     ObjectInputStream ois=new ObjectInputStream(fis);
+     usuarios=(ArrayList<Usuario>) ois.readObject();
+    //Nos regresa un objeto y debemos hacerle casting para que no marque error
+     
       
      //Nos regresa el ArrayList de usuarios   
      return usuarios;  
