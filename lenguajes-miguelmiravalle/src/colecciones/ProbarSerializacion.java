@@ -10,8 +10,6 @@ package colecciones;
  * @author T-107
  */
 import java.io.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 public class ProbarSerializacion {
     public static void main(String[] args){
     Direccion d1=new Direccion();
@@ -21,7 +19,7 @@ public class ProbarSerializacion {
               d1.setMunicipio("Ecatepec");
     Usuario u=new Usuario();
             u.setDireccion(d1);
-            u.setLogin("Miguel");
+            u.setLogin("Miguel Angel");
             u.setPassword("yo");
             
     //Ahora usamos la clase persistencia
